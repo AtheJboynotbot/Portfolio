@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 function PlaceholderBox() {
   return (
@@ -13,6 +14,7 @@ function PlaceholderBox() {
 }
 
 export default function PreviewSlideshow({ media = [] }) {
+  const isMobile = useIsMobile();
   const [current, setCurrent] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [errors, setErrors] = useState({});
@@ -97,7 +99,7 @@ export default function PreviewSlideshow({ media = [] }) {
               borderRadius: "50%", width: "32px", height: "32px",
               cursor: "pointer", fontSize: "1.2rem",
               display: "flex", alignItems: "center", justifyContent: "center",
-              opacity: isHovered ? 1 : 0, transition: "opacity 0.2s ease",
+              opacity: isMobile || isHovered ? 1 : 0, transition: "opacity 0.2s ease",
               fontFamily: "'Jersey 10', monospace",
             }}
           >‹</button>
@@ -110,7 +112,7 @@ export default function PreviewSlideshow({ media = [] }) {
               borderRadius: "50%", width: "32px", height: "32px",
               cursor: "pointer", fontSize: "1.2rem",
               display: "flex", alignItems: "center", justifyContent: "center",
-              opacity: isHovered ? 1 : 0, transition: "opacity 0.2s ease",
+              opacity: isMobile || isHovered ? 1 : 0, transition: "opacity 0.2s ease",
               fontFamily: "'Jersey 10', monospace",
             }}
           >›</button>

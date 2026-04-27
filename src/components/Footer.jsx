@@ -1,9 +1,12 @@
+import { useIsMobile } from "../hooks/useIsMobile";
+
 export default function Footer() {
+  const isMobile = useIsMobile();
   return (
     <footer
       style={{
         textAlign: "center",
-        padding: "2rem 1rem",
+        padding: isMobile ? "1rem" : "2rem 1rem",
         borderTop: "1px solid #2a2a2a",
         backgroundColor: "transparent",
         fontFamily: "'Jersey 10', monospace",

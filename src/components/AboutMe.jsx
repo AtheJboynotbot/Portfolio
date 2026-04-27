@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeUpWrapper from "./FadeUpWrapper";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 const techSkills = [
   { category: "Frontend", items: "React, TailwindCSS, HTML, CSS, JavaScript" },
@@ -21,6 +22,7 @@ const ff = "'Jersey 10', monospace";
 
 export default function AboutMe() {
   const navigate = useNavigate();
+  const isMobile = useIsMobile();
 
   return (
     <motion.div
@@ -32,8 +34,8 @@ export default function AboutMe() {
       style={{
         minHeight: "100vh",
         backgroundColor: "transparent",
-        padding: "3.5rem 2rem 6rem",
-        maxWidth: "1500px",
+        padding: isMobile ? "2rem 1rem 3rem" : "3.5rem 2rem 6rem",
+        maxWidth: isMobile ? "100%" : "1500px",
         margin: "0 auto",
         fontFamily: ff,
       }}
@@ -43,7 +45,7 @@ export default function AboutMe() {
         <div style={{ textAlign: "left", marginBottom: "2.5rem" }}>
           <h1
             style={{
-              fontSize: "clamp(3.5rem, 14vw, 7rem)",
+              fontSize: "clamp(2rem, 10vw, 7rem)",
               fontWeight: 700,
               color: "#f1f1f1",
               margin: 0,
@@ -54,7 +56,7 @@ export default function AboutMe() {
           </h1>
           <h2
             style={{
-              fontSize: "clamp(5.5rem, 8vw, 5rem)",
+              fontSize: "clamp(1.5rem, 6vw, 5rem)",
               fontWeight: 700,
               color: "#f1f1f1",
               margin: "0.2rem 0 0",
@@ -71,7 +73,7 @@ export default function AboutMe() {
         <div style={{ textAlign: "right", marginBottom: "2.5rem" }}>
           <h2
             style={{
-              fontSize: "clamp(7.4rem, 8vw, 2.5rem)",
+              fontSize: "clamp(1.4rem, 5vw, 4rem)",
               fontWeight: 700,
               color: "#f1f1f1",
               margin: 0,
@@ -90,7 +92,7 @@ export default function AboutMe() {
           style={{
             textAlign: "left",
             color: "#f1f1f1",
-            fontSize: "clamp(4rem, 3vw, 1.2rem)",
+            fontSize: "clamp(1rem, 3vw, 2rem)",
             lineHeight: 1.7,
             margin: "0 0 1.5rem",
             fontWeight: 400,
@@ -107,7 +109,7 @@ export default function AboutMe() {
           style={{
             textAlign: "right",
             color: "#f1f1f1",
-            fontSize: "clamp(3.95rem, 3vw, 1.2rem)",
+            fontSize: "clamp(1rem, 3vw, 2rem)",
             lineHeight: 1.7,
             margin: "0 0 3rem",
             fontWeight: 400,
@@ -124,7 +126,7 @@ export default function AboutMe() {
             style={{
               color: "#f1f1f1",
               fontWeight: 700,
-              fontSize: "clamp(4rem, 3vw, 1.3rem)",
+              fontSize: "clamp(1.1rem, 3vw, 2rem)",
               margin: "0 0 0.6rem",
             }}
           >
@@ -142,7 +144,7 @@ export default function AboutMe() {
                 key={skill.category}
                 style={{
                   color: "#f1f1f1",
-                  fontSize: "clamp(2rem, 2vw, 0.85rem)",
+                  fontSize: "clamp(0.85rem, 2vw, 1.2rem)",
                   marginBottom: "0.25rem",
                   lineHeight: 1.6,
                 }}
@@ -162,7 +164,7 @@ export default function AboutMe() {
             style={{
               color: "#f1f1f1",
               fontWeight: 700,
-              fontSize: "clamp(4rem, 3vw, 1.3rem)",
+              fontSize: "clamp(1.1rem, 3vw, 2rem)",
               margin: "0 0 0.5rem",
             }}
           >
@@ -174,7 +176,7 @@ export default function AboutMe() {
                 key={skill}
                 style={{
                   color: "#f1f1f1",
-                  fontSize: "clamp(2rem, 2vw, 0.85rem)",
+                  fontSize: "clamp(0.85rem, 2vw, 1.2rem)",
                   marginBottom: "0.2rem",
                   lineHeight: 1.6,
                 }}
@@ -192,7 +194,7 @@ export default function AboutMe() {
           style={{
             textAlign: "left",
             color: "#f1f1f1",
-            fontSize: "clamp(5rem, 4vw, 1.6rem)",
+            fontSize: "clamp(1.2rem, 4vw, 2.5rem)",
             lineHeight: 1.5,
             fontWeight: 700,
           }}

@@ -1,4 +1,5 @@
 import PreviewSlideshow from "./PreviewSlideshow";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 function GitHubIcon({ size = 13 }) {
   return (
@@ -49,8 +50,9 @@ export default function ProjectCard({
   media = [],
   reverse = false,
 }) {
+  const isMobile = useIsMobile();
   const previewBlock = (
-    <div style={{ flex: "0 0 auto", width: "100%", maxWidth: "700px", marginLeft: reverse ? "auto" : "0", marginRight: reverse ? "0" : "auto" }}>
+    <div style={{ flex: "0 0 auto", width: "100%", maxWidth: isMobile ? "100%" : "700px", marginLeft: isMobile ? "0" : (reverse ? "auto" : "0"), marginRight: isMobile ? "0" : (reverse ? "0" : "auto") }}>
       {media.length === 0 ? (
         <PlaceholderBox />
       ) : media.length === 1 ? (
@@ -79,7 +81,7 @@ export default function ProjectCard({
           flexWrap: "wrap",
           gap: "0.2rem",
           marginTop: "0.75rem",
-          justifyContent: reverse ? "flex-end" : "flex-start",
+          justifyContent: isMobile ? "flex-start" : (reverse ? "flex-end" : "flex-start"),
         }}
       >
         {techStack.map((tech) => (
@@ -88,7 +90,7 @@ export default function ProjectCard({
             style={{
               border: "1px solid #333",
               borderRadius: "9999px",
-              fontSize: "1.5rem",
+              fontSize: isMobile ? "1rem" : "1.5rem",
               padding: "0.2rem 0.6rem",
               color: "#aaaaaa",
               fontFamily: "'Jersey 10', monospace",
@@ -108,14 +110,14 @@ export default function ProjectCard({
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
-        alignItems: reverse ? "flex-end" : "flex-start",
+        alignItems: isMobile ? "flex-start" : (reverse ? "flex-end" : "flex-start"),
         gap: "0rem",
-        textAlign: reverse ? "right" : "left",
+        textAlign: isMobile ? "left" : (reverse ? "right" : "left"),
       }}
     >
       <h3
         style={{
-          fontSize: "clamp(3.4rem, 2vw, 1.1rem)",
+          fontSize: "clamp(1.1rem, 3vw, 2rem)",
           fontWeight: 700,
           color: "#f1f1f1",
           letterSpacing: "0.1em",
@@ -141,18 +143,18 @@ export default function ProjectCard({
             key={idx}
             style={{
               color: "#aaaaaa",
-              fontSize: "1.4rem",
-              lineHeight: 2.7,
-              paddingLeft: reverse ? 0 : "1rem",
-              paddingRight: reverse ? "1rem" : 0,
+              fontSize: isMobile ? "0.95rem" : "1.4rem",
+              lineHeight: isMobile ? 1.8 : 2.7,
+              paddingLeft: isMobile ? "1rem" : (reverse ? 0 : "1rem"),
+              paddingRight: isMobile ? 0 : (reverse ? "1rem" : 0),
               position: "relative",
             }}
           >
             <span
               style={{
                 position: "absolute",
-                left: reverse ? "auto" : 0,
-                right: reverse ? 0 : "auto",
+                left: isMobile ? 0 : (reverse ? "auto" : 0),
+                right: isMobile ? "auto" : (reverse ? 0 : "auto"),
                 color: "#00ffcc",
               }}
             >
@@ -172,7 +174,7 @@ export default function ProjectCard({
           alignItems: "center",
           gap: "0.4rem",
           color: "#aaaaaa",
-          fontSize: "1.54rem",
+          fontSize: isMobile ? "1rem" : "1.54rem",
           fontFamily: "'Jersey 10', monospace",
           textDecoration: "none",
           border: "1px solid #2a2a2a",

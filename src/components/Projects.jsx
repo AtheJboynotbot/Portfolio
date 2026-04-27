@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import FadeUpWrapper from "./FadeUpWrapper";
 import ProjectCard from "./ProjectCard";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 const base = import.meta.env.BASE_URL;
 
@@ -85,6 +86,7 @@ const projects = [
 ];
 
 export default function Projects() {
+  const isMobile = useIsMobile();
   return (
     <motion.div
       key="projects"
@@ -95,7 +97,7 @@ export default function Projects() {
       style={{
         minHeight: "100vh",
         backgroundColor: "transparent",
-        padding: "4rem 5rem",
+        padding: isMobile ? "2rem 1rem" : "4rem 5rem",
         maxWidth: "100%",
         margin: "0 auto",
         fontFamily: "'Jersey 10', monospace",
@@ -104,7 +106,7 @@ export default function Projects() {
       <FadeUpWrapper delay={0}>
         <h1
           style={{
-            fontSize: "clamp(5rem, 4vw, 2rem)",
+            fontSize: "clamp(2rem, 6vw, 4rem)",
             fontWeight: 700,
             color: "#f1f1f1",
             textAlign: "center",

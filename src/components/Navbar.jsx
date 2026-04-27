@@ -1,8 +1,10 @@
 import { useNavigate, useLocation } from "react-router-dom";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
+  const isMobile = useIsMobile();
 
   const tabs = [
     { label: "About Me", path: "/" },
@@ -17,7 +19,7 @@ export default function Navbar() {
         zIndex: 100,
         backgroundColor: "#111111",
         borderBottom: "1px solid #2a2a2a",
-        padding: "0.75rem 1.5rem",
+        padding: isMobile ? "0.5rem 1rem" : "0.75rem 1.5rem",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -26,7 +28,7 @@ export default function Navbar() {
       <span
         style={{
           color: "#aaaaaa",
-          fontSize: "1.5rem",
+          fontSize: isMobile ? "1rem" : "1.5rem",
           fontFamily: "'Jersey 10', monospace",
           letterSpacing: "0.05em",
         }}
@@ -34,7 +36,7 @@ export default function Navbar() {
         Get to know Me
       </span>
 
-      <div style={{ display: "flex", gap: "0.5rem" }}>
+      <div style={{ display: "flex", gap: isMobile ? "0.3rem" : "0.5rem" }}>
         {tabs.map((tab) => {
           const isActive = location.pathname === tab.path;
           return (
@@ -42,13 +44,13 @@ export default function Navbar() {
               key={tab.path}
               onClick={() => navigate(tab.path)}
               style={{
-                padding: "0.35rem 1rem",
+                padding: isMobile ? "0.25rem 0.6rem" : "0.35rem 1rem",
                 borderRadius: "9999px",
                 border: isActive ? "none" : "1px solid #2a2a2a",
                 backgroundColor: isActive ? "#f1f1f1" : "transparent",
                 color: isActive ? "#0d0d0d" : "#aaaaaa",
                 fontFamily: "'Jersey 10', monospace",
-                fontSize: "1.5rem",
+                fontSize: isMobile ? "1rem" : "1.5rem",
                 cursor: "pointer",
                 fontWeight: isActive ? 700 : 400,
                 transition: "all 0.2s ease",

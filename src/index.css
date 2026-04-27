@@ -35,8 +35,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, button, input, a {
   font-family: 'Jersey 10', monospace;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .project-row {
     grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
   }
 }
