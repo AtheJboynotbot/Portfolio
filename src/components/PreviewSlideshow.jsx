@@ -100,7 +100,7 @@ export default function PreviewSlideshow({ media = [] }) {
               cursor: "pointer", fontSize: "1.2rem",
               display: "flex", alignItems: "center", justifyContent: "center",
               opacity: isMobile || isHovered ? 1 : 0, transition: "opacity 0.2s ease",
-              fontFamily: "'Jersey 10', monospace",
+              fontFamily: "'JetBrains Mono', monospace",
             }}
           >‹</button>
           <button
@@ -113,7 +113,7 @@ export default function PreviewSlideshow({ media = [] }) {
               cursor: "pointer", fontSize: "1.2rem",
               display: "flex", alignItems: "center", justifyContent: "center",
               opacity: isMobile || isHovered ? 1 : 0, transition: "opacity 0.2s ease",
-              fontFamily: "'Jersey 10', monospace",
+              fontFamily: "'JetBrains Mono', monospace",
             }}
           >›</button>
         </>

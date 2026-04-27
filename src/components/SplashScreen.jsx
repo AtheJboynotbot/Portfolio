@@ -53,7 +53,8 @@ export default function SplashScreen({ onDone }) {
             fontWeight: 700,
             color: "#f1f1f1",
             margin: 0,
-            fontFamily: "'Jersey 10', monospace",
+            fontFamily: "'Space Grotesk', sans-serif",
+            letterSpacing: "-0.02em",
           }}
         >
           Hello
@@ -65,7 +66,7 @@ export default function SplashScreen({ onDone }) {
             fontWeight: 700,
             color: "#aaaaaa",
             margin: "1rem 0 0",
-            fontFamily: "'Jersey 10', monospace",
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           Welcome to my portfolio

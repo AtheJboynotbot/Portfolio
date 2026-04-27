@@ -100,18 +100,19 @@ export default function Projects() {
         padding: isMobile ? "2rem 1rem" : "4rem 5rem",
         maxWidth: "100%",
         margin: "0 auto",
-        fontFamily: "'Jersey 10', monospace",
+        fontFamily: "'Inter', sans-serif",
       }}
     >
       <FadeUpWrapper delay={0}>
         <h1
           style={{
             fontSize: "clamp(2rem, 6vw, 4rem)",
+            fontFamily: "'Space Grotesk', sans-serif",
             fontWeight: 700,
             color: "#f1f1f1",
             textAlign: "center",
             marginBottom: "3rem",
-            letterSpacing: "0.05em",
+            letterSpacing: "-0.02em",
           }}
         >
           Projects
