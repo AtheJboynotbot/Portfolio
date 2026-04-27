@@ -2,21 +2,23 @@ import { motion } from "framer-motion";
 import FadeUpWrapper from "./FadeUpWrapper";
 import ProjectCard from "./ProjectCard";
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: "KAPITAN SISIG DIGITAL MANAGER",
     githubUrl: "https://github.com/ChimpanzEatingGrades/DigitalMenuManagementSystem",
     techStack: ["React", "Vite", "TailwindCSS", "Django", "Django REST Framework", "PostgreSQL"],
     media: [
-      { type: "video", src: "/media/kapitan-sisig/demo.mp4" },
-      { type: "image", src: "/media/kapitan-sisig/preview-1.png" },
-      { type: "image", src: "/media/kapitan-sisig/preview-2.png" },
-      { type: "image", src: "/media/kapitan-sisig/preview-3.png" },
-      { type: "image", src: "/media/kapitan-sisig/preview-4.png" },
-      { type: "image", src: "/media/kapitan-sisig/preview-5.png" },
-      { type: "image", src: "/media/kapitan-sisig/preview-6.png" },
-      { type: "image", src: "/media/kapitan-sisig/preview-7.png" },
-      { type: "image", src: "/media/kapitan-sisig/preview-8.png" },
+      { type: "video", src: `${base}media/kapitan-sisig/demo.mp4` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-1.png` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-2.png` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-3.png` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-4.png` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-5.png` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-6.png` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-7.png` },
+      { type: "image", src: `${base}media/kapitan-sisig/preview-8.png` },
     ],
     description: [
       "Developed a full-stack web application for managing a multi-branch restaurant's menu, inventory, and orders.",
@@ -31,12 +33,12 @@ const projects = [
     githubUrl: "https://github.com/AtheJboynotbot/juciflut2",
     techStack: ["Flutter", "Dart", "Firebase"],
     media: [
-      { type: "video", src: "/media/faculty-consultation/demo.mp4" },
-      { type: "image", src: "/media/faculty-consultation/preview-1.png" },
-      { type: "image", src: "/media/faculty-consultation/preview-2.png" },
-      { type: "image", src: "/media/faculty-consultation/preview-3.png" },
-      { type: "image", src: "/media/faculty-consultation/preview-4.png" },
-      { type: "image", src: "/media/faculty-consultation/preview-5.png" },
+      { type: "video", src: `${base}media/faculty-consultation/demo.mp4` },
+      { type: "image", src: `${base}media/faculty-consultation/preview-1.png` },
+      { type: "image", src: `${base}media/faculty-consultation/preview-2.png` },
+      { type: "image", src: `${base}media/faculty-consultation/preview-3.png` },
+      { type: "image", src: `${base}media/faculty-consultation/preview-4.png` },
+      { type: "image", src: `${base}media/faculty-consultation/preview-5.png` },
     ],
     description: [
       "Built a web-based scheduling system for faculty-student consultations.",
@@ -50,12 +52,12 @@ const projects = [
     githubUrl: "https://github.com/AtheJboynotbot/TESDAproject",
     techStack: ["HTML5", "CSS3", "JavaScript"],
     media: [
-      { type: "video", src: "/media/tesda-redesign/demo.mp4" },
-      { type: "image", src: "/media/tesda-redesign/preview-1.png" },
-      { type: "image", src: "/media/tesda-redesign/preview-2.png" },
-      { type: "image", src: "/media/tesda-redesign/preview-3.png" },
-      { type: "image", src: "/media/tesda-redesign/preview-4.png" },
-      { type: "image", src: "/media/tesda-redesign/preview-5.png" },
+      { type: "video", src: `${base}media/tesda-redesign/demo.mp4` },
+      { type: "image", src: `${base}media/tesda-redesign/preview-1.png` },
+      { type: "image", src: `${base}media/tesda-redesign/preview-2.png` },
+      { type: "image", src: `${base}media/tesda-redesign/preview-3.png` },
+      { type: "image", src: `${base}media/tesda-redesign/preview-4.png` },
+      { type: "image", src: `${base}media/tesda-redesign/preview-5.png` },
     ],
     description: [
       "Designed and developed a responsive multi-page website redesign.",
@@ -68,10 +70,10 @@ const projects = [
     githubUrl: "https://github.com/AtheJboynotbot/Raycasting-Project",
     techStack: ["Python", "Pygame"],
     media: [
-      { type: "video", src: "/media/raycasting-engine/demo.mp4" },
-      { type: "image", src: "/media/raycasting-engine/preview-1.png" },
-      { type: "image", src: "/media/raycasting-engine/preview-2.png" },
-      { type: "image", src: "/media/raycasting-engine/preview-3.png" },
+      { type: "video", src: `${base}media/raycasting-engine/demo.mp4` },
+      { type: "image", src: `${base}media/raycasting-engine/preview-1.png` },
+      { type: "image", src: `${base}media/raycasting-engine/preview-2.png` },
+      { type: "image", src: `${base}media/raycasting-engine/preview-3.png` },
     ],
     description: [
       "Built a pseudo-3D first-person rendering engine using raycasting techniques.",
