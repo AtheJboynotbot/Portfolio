@@ -50,7 +50,7 @@ const projects = [
   },
   {
     title: "TESDA WEBSITE REDESIGN",
-    githubUrl: "https://github.com/AtheJboynotbot/TESDAproject",
+    githubUrl: "https://github.com/AtheJboynotbot/TESDAproject-",
     techStack: ["HTML5", "CSS3", "JavaScript"],
     media: [
       { type: "video", src: `${base}media/tesda-redesign/demo.mp4` },
