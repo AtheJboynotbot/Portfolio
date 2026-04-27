@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import SplashScreen from "./components/SplashScreen";
 import Navbar from "./components/Navbar";
@@ -28,7 +28,7 @@ function App() {
   );
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <StarsBackground />
       <ScrollToTop />
       <div style={{ position: "relative", zIndex: 1 }}>
@@ -47,7 +47,7 @@ function App() {
           </>
         )}
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
