@@ -29,8 +29,7 @@ export default function Navbar() {
         style={{
           color: "#aaaaaa",
           fontSize: isMobile ? "1rem" : "1.5rem",
-          fontFamily: "'JetBrains Mono', monospace",
-          letterSpacing: "0.03em",
+          fontFamily: "'Silkscreen', cursive",
         }}
       >
         Get to know Me
@@ -49,8 +48,7 @@ export default function Navbar() {
                 border: isActive ? "none" : "1px solid #2a2a2a",
                 backgroundColor: isActive ? "#f1f1f1" : "transparent",
                 color: isActive ? "#0d0d0d" : "#aaaaaa",
-                fontFamily: "'JetBrains Mono', monospace",
-                letterSpacing: "0.03em",
+                fontFamily: "'Silkscreen', cursive",
                 fontSize: isMobile ? "1rem" : "1.5rem",
                 cursor: "pointer",
                 fontWeight: isActive ? 700 : 400,

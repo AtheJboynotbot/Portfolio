@@ -49,12 +49,12 @@ export default function SplashScreen({ onDone }) {
         <motion.h1
           variants={lineVariants}
           style={{
-            fontSize: "clamp(2.5rem, 8vw, 5rem)",
+            fontSize: "clamp(1.2rem, 4vw, 2.5rem)",
             fontWeight: 700,
             color: "#f1f1f1",
             margin: 0,
-            fontFamily: "'Space Grotesk', sans-serif",
-            letterSpacing: "-0.02em",
+            fontFamily: "'Pixelify Sans', cursive",
+            lineHeight: 1.5,
           }}
         >
           Hello
@@ -66,7 +66,8 @@ export default function SplashScreen({ onDone }) {
             fontWeight: 700,
             color: "#aaaaaa",
             margin: "1rem 0 0",
-            fontFamily: "'Inter', sans-serif",
+            fontFamily: "'VT323', monospace",
+            lineHeight: 1.8,
           }}
         >
           Welcome to my portfolio

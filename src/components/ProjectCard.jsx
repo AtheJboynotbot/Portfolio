@@ -93,8 +93,7 @@ export default function ProjectCard({
               fontSize: isMobile ? "1rem" : "1.5rem",
               padding: "0.2rem 0.6rem",
               color: "#aaaaaa",
-              fontFamily: "'JetBrains Mono', monospace",
-              letterSpacing: "0.03em",
+              fontFamily: "'Silkscreen', cursive",
             }}
           >
             {tech}
@@ -118,13 +117,13 @@ export default function ProjectCard({
     >
       <h3
         style={{
-          fontSize: "clamp(1.1rem, 3vw, 2rem)",
-          fontFamily: "'Space Grotesk', sans-serif",
+          fontSize: "clamp(3rem, 1.5vw, 1rem)",
+          fontFamily: "'Pixelify Sans', cursive",
           fontWeight: 700,
           color: "#f1f1f1",
-          letterSpacing: "0.05em",
           textTransform: "uppercase",
           margin: 0,
+          lineHeight: 1.5,
         }}
       >
         {title}
@@ -145,9 +144,9 @@ export default function ProjectCard({
             key={idx}
             style={{
               color: "#aaaaaa",
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'VT323', monospace",
               fontSize: isMobile ? "0.95rem" : "1.4rem",
-              lineHeight: isMobile ? 1.8 : 2.7,
+              lineHeight: isMobile ? 1.8 : 2.0,
               paddingLeft: isMobile ? "1rem" : (reverse ? 0 : "1rem"),
               paddingRight: isMobile ? 0 : (reverse ? "1rem" : 0),
               position: "relative",
@@ -178,8 +177,7 @@ export default function ProjectCard({
           gap: "0.4rem",
           color: "#aaaaaa",
           fontSize: isMobile ? "1rem" : "1.54rem",
-          fontFamily: "'JetBrains Mono', monospace",
-          letterSpacing: "0.03em",
+          fontFamily: "'Silkscreen', cursive",
           textDecoration: "none",
           border: "1px solid #2a2a2a",
           borderRadius: "9999px",
