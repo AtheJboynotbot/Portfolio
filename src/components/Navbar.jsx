@@ -28,7 +28,7 @@ export default function Navbar() {
       <span
         style={{
           color: "#aaaaaa",
-          fontSize: isMobile ? "1rem" : "1.5rem",
+          fontSize: isMobile ? "0.8rem" : "1.5rem",
           fontFamily: "'Silkscreen', cursive",
         }}
       >
@@ -49,7 +49,7 @@ export default function Navbar() {
                 backgroundColor: isActive ? "#f1f1f1" : "transparent",
                 color: isActive ? "#0d0d0d" : "#aaaaaa",
                 fontFamily: "'Silkscreen', cursive",
-                fontSize: isMobile ? "1rem" : "1.5rem",
+                fontSize: isMobile ? "0.8rem" : "1.5rem",
                 cursor: "pointer",
                 fontWeight: isActive ? 700 : 400,
                 transition: "all 0.2s ease",

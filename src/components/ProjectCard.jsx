@@ -120,7 +120,7 @@ export default function ProjectCard({
     {/* Title project */}
       <h3
         style={{
-          fontSize: "clamp(3rem, 1.5vw, 1rem)",
+          fontSize: isMobile ? "1.5rem" : "3rem",
           fontFamily: "'Pixelify Sans', cursive",
           fontWeight: 700,
           color: "#f1f1f1",
