@@ -96,7 +96,7 @@ export default function AboutMe() {
           <p
             style={{
               textAlign: "left",
-              color: "#aaaaaa",
+              color: "#f1f1f1",
               fontFamily: fontBody,
               fontSize: isMobile ? "1.1rem" : "2.5rem",
               lineHeight: 2.0,
@@ -140,10 +140,10 @@ export default function AboutMe() {
 
       {/* University — CENTER */}
       <FadeUpWrapper delay={0.2}>
-        <div style={{ textAlign: "left", marginBottom: "2.5rem" }}>
+        <div style={{ textAlign: "right", marginBottom: "2.5rem" }}>
         <p
           style={{
-            textAlign: "left",
+            textAlign: "right",
             color: "#f1f1f1",
             fontFamily: fontBody,
             fontSize: isMobile ? "1.2rem" : "4rem",
@@ -161,7 +161,7 @@ export default function AboutMe() {
       <FadeUpWrapper delay={0.25}>
         <p
           style={{
-            textAlign: "right",
+            textAlign: "left",
             color: "#f1f1f1",
             fontFamily: fontBody,
             fontSize: isMobile ? "1.1rem" : "2.8rem",
@@ -174,9 +174,9 @@ export default function AboutMe() {
         </p>
       </FadeUpWrapper>
 
-      {/* Skills — LEFT aligned */}
+      {/* Skills — right aligned */}
       <FadeUpWrapper delay={0.3}>
-        <div style={{ textAlign: "left", marginBottom: "3rem" }}>
+        <div style={{ textAlign: "right", marginBottom: "3rem" }}>
           <p
             style={{
               color: "#f1f1f1",
@@ -190,7 +190,7 @@ export default function AboutMe() {
           </p>
           <ul
             style={{
-              listStyle: "disc",
+              listStyle: "none",
               paddingLeft: "1.1rem",
               fontFamily: fontBody,
             }}
@@ -213,9 +213,9 @@ export default function AboutMe() {
         </div>
       </FadeUpWrapper>
 
-      {/* Soft skills — RIGHT aligned */}
+      {/* Soft skills — left aligned */}
       <FadeUpWrapper delay={0.35}>
-        <div style={{ textAlign: "right", marginBottom: "3.5rem" }}>
+        <div style={{ textAlign: "left", marginBottom: "3.5rem" }}>
           <p
             style={{
               color: "#f1f1f1",
@@ -245,11 +245,11 @@ export default function AboutMe() {
         </div>
       </FadeUpWrapper>
 
-      {/* Projects link — LEFT aligned */}
+      {/* Projects link — right aligned */}
       <FadeUpWrapper delay={0.4}>
         <p
           style={{
-            textAlign: "left",
+            textAlign: "right",
             color: "#f1f1f1",
             fontSize: isMobile ? "1.2rem" : "3.6rem",
             fontFamily: fontDisplay,
