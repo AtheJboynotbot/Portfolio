@@ -47,7 +47,7 @@ export default function AboutMe() {
         <div style={{ textAlign: "left", marginBottom: "2.5rem" }}>
           <h1
             style={{
-              fontSize: "clamp(6rem, 5vw, 3rem)",
+              fontSize: isMobile ? "2.5rem" : "6rem",
               fontFamily: fontDisplay,
               fontWeight: 700,
               color: "#f1f1f1",
@@ -59,7 +59,7 @@ export default function AboutMe() {
           </h1>
           <h2
             style={{
-              fontSize: "clamp(3rem, 3vw, 2rem)",
+              fontSize: isMobile ? "1.5rem" : "3rem",
               fontFamily: fontDisplay,
               fontWeight: 700,
               color: "#f1f1f1",
@@ -77,7 +77,7 @@ export default function AboutMe() {
         <div style={{ textAlign: "right", marginBottom: "2.5rem" }}>
           <h2
             style={{
-              fontSize: "clamp(3.6rem, 2.5vw, 1.8rem)",
+              fontSize: isMobile ? "1.4rem" : "3.6rem",
               fontFamily: fontDisplay,
               fontWeight: 700,
               color: "#f1f1f1",
@@ -98,7 +98,7 @@ export default function AboutMe() {
             textAlign: "left",
             color: "#f1f1f1",
             fontFamily: fontBody,
-            fontSize: "clamp(4rem, 2vw, 1.2rem)",
+            fontSize: isMobile ? "1.2rem" : "4rem",
             lineHeight: 2.0,
             margin: "0 0 1.5rem",
             fontWeight: 400,
@@ -116,7 +116,7 @@ export default function AboutMe() {
             textAlign: "right",
             color: "#f1f1f1",
             fontFamily: fontBody,
-            fontSize: "clamp(2.8rem, 2vw, 1.2rem)",
+            fontSize: isMobile ? "1.1rem" : "2.8rem",
             lineHeight: 2.0,
             margin: "0 0 3rem",
             fontWeight: 400,
@@ -134,7 +134,7 @@ export default function AboutMe() {
               color: "#f1f1f1",
               fontFamily: fontDisplay,
               fontWeight: 700,
-              fontSize: "clamp(2.6rem, 1.5vw, 1rem)",
+              fontSize: isMobile ? "1.1rem" : "2.6rem",
               margin: "0 0 0.6rem",
             }}
           >
@@ -152,7 +152,7 @@ export default function AboutMe() {
                 key={skill.category}
                 style={{
                   color: "#f1f1f1",
-                  fontSize: "clamp(1.7rem, 1.5vw, 0.95rem)",
+                  fontSize: isMobile ? "0.9rem" : "1.7rem",
                   marginBottom: "0.25rem",
                   lineHeight: 2.0,
                 }}
@@ -173,7 +173,7 @@ export default function AboutMe() {
               color: "#f1f1f1",
               fontFamily: fontDisplay,
               fontWeight: 700,
-              fontSize: "clamp(2.6rem, 1.5vw, 1rem)",
+              fontSize: isMobile ? "1.1rem" : "2.6rem",
               margin: "0 0 0.5rem",
             }}
           >
@@ -185,7 +185,7 @@ export default function AboutMe() {
                 key={skill}
                 style={{
                   color: "#f1f1f1",
-                  fontSize: "clamp(1.7rem, 1.5vw, 0.95rem)",
+                  fontSize: isMobile ? "0.9rem" : "1.7rem",
                   marginBottom: "0.2rem",
                   lineHeight: 2.0,
                 }}
@@ -203,7 +203,7 @@ export default function AboutMe() {
           style={{
             textAlign: "left",
             color: "#f1f1f1",
-            fontSize: "clamp(3.6rem, 2vw, 1.2rem)",
+            fontSize: isMobile ? "1.2rem" : "3.6rem",
             fontFamily: fontDisplay,
             lineHeight: 1.6,
             fontWeight: 700,

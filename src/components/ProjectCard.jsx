@@ -15,6 +15,7 @@ function GitHubIcon({ size = 13 }) {
   );
 }
 
+{/* the container for the slideshow */}
 function PlaceholderBox() {
   return (
     <div
@@ -42,6 +43,7 @@ function PlaceholderBox() {
   );
 }
 
+{/* evrything thats decribed in the projects will be drawn here including the slideshow */}
 export default function ProjectCard({
   title,
   description,
@@ -115,6 +117,7 @@ export default function ProjectCard({
         textAlign: isMobile ? "left" : (reverse ? "right" : "left"),
       }}
     >
+    {/* Title project */}
       <h3
         style={{
           fontSize: "clamp(3rem, 1.5vw, 1rem)",
@@ -139,6 +142,7 @@ export default function ProjectCard({
           gap: "0rem",
         }}
       >
+    {/* Description project */}
         {description.map((item, idx) => (
           <li
             key={idx}
@@ -166,7 +170,7 @@ export default function ProjectCard({
           </li>
         ))}
       </ul>
-
+      {/* GitHub link */}
       <a
         href={githubUrl}
         target="_blank"
