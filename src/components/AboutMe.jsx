@@ -90,6 +90,54 @@ export default function AboutMe() {
         </div>
       </FadeUpWrapper>
 
+      {/* Bio + Resume — LEFT aligned */}
+      <FadeUpWrapper delay={0.17}>
+        <div style={{ textAlign: "left", marginBottom: "2.5rem" }}>
+          <p
+            style={{
+              textAlign: "left",
+              color: "#aaaaaa",
+              fontFamily: fontBody,
+              fontSize: isMobile ? "1.1rem" : "2.5rem",
+              lineHeight: 2.0,
+              margin: "0 0 1rem",
+            }}
+          >
+            I build things for the web and sometimes beyond it.<br />
+            I've worked with React, Django, and Flutter to create<br />
+            apps like a restaurant management system and a scheduling platform.<br />
+            I enjoy turning ideas into real, working software.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1Ss8q_c3FHOOuyT-NQwagVWhSf5amElTm/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              fontFamily: fontMono,
+              fontSize: isMobile ? "0.9rem" : "1.4rem",
+              color: "#aaaaaa",
+              border: "1px solid #2a2a2a",
+              borderRadius: "9999px",
+              padding: "0.35rem 0.9rem",
+              textDecoration: "none",
+              transition: "all 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "#00ffcc";
+              e.currentTarget.style.color = "#00ffcc";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "#2a2a2a";
+              e.currentTarget.style.color = "#aaaaaa";
+            }}
+          >
+            View my Resume
+          </a>
+        </div>
+      </FadeUpWrapper>
+
       {/* University — CENTER */}
       <FadeUpWrapper delay={0.2}>
         <div style={{ textAlign: "left", marginBottom: "2.5rem" }}>

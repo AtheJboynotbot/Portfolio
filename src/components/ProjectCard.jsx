@@ -15,7 +15,7 @@ function GitHubIcon({ size = 13 }) {
   );
 }
 
-{/* the container for the slideshow */}
+// the container for the slideshow
 function PlaceholderBox() {
   return (
     <div
@@ -43,7 +43,7 @@ function PlaceholderBox() {
   );
 }
 
-{/* evrything thats decribed in the projects will be drawn here including the slideshow */}
+// everything that's described in the projects will be drawn here including the slideshow
 export default function ProjectCard({
   title,
   description,
